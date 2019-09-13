@@ -1,0 +1,246 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {margin: 0;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/*-----------------------------------------------------*/
+fieldset{
+    border: 1px solid rgba(128, 128, 128, 0.336);
+}
+
+div#contenedor {
+    position: relative;
+    top: 160px;
+}
+
+div.videoTutorial4 { /*div de clase videoTutorial*/
+    position: relative;
+    top: 160px;
+    height: 500px;
+}
+div.descVideo { /*div de clase desc_curso*/
+    margin-left: 34%;
+    padding-left: 10px;
+    z-index: 1;
+}
+div.cursos4 { /*div de clase desc_curso*/
+    position: relative;
+    top: 160px;
+    height: 500px;
+}
+
+div.desc_curso { /*div de clase desc_curso*/
+    margin-left: 25%;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+
+/*-----------------ENCABEZADOS----------------------*/
+h1{
+    background-color: rgba(181, 213, 235, 0.411);
+}
+h1.video {
+    color: royalblue;
+    text-align: center;
+    font-style: normal;
+}
+h1.facultades {
+    color: royalblue;
+    text-align: center;
+    font-style: normal;
+}
+
+h1.cursos {
+    color: royalblue;
+    text-align: center;
+    font-style: normal;
+}
+
+h2{
+    font-style: oblique;
+}
+
+
+ /*hace redondeado el recuadro*/
+/*.boton{
+    border-radius: 10px; 
+}*/
+
+/*hace mas grande el recuadro de apellido*/
+/*#apellido{
+    width: 200px;
+} */
+
+/*-------------------BOTONES----------------------------*/
+.btn-danger{
+    background-color: royalblue;
+}
+
+
+.btn-primary{
+    background-color: rgb(65, 225, 105);
+}
+
+.btn-primary2{
+    background-color: rgb(225, 65, 65);
+}
+
+.btn-primary3{
+    background-color: rgb(108, 65, 225);
+}
+
+
+/*------------------Header y footer------------------*/
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(205, 221, 220);
+    z-index: 2;
+}
+
+footer {
+    border: 1px solid rgba(189, 189, 189, 0.575);
+    color: rgba(0, 0, 0, 0.555);
+}
+
+footer span.nombreSistema {
+    float: left;
+}
+
+footer span.facultad {
+    float: right;
+}
+
+/*-----------------BARRA NAVEGACION HORIZONTAL---------------------*/
+.navbar {
+    width: 100%;
+    background-color: rgb(85, 85, 85);
+    overflow: auto;
+    position: fixed;
+    top: 100px;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: royalblue;
+}
+
+#login{
+    position: fixed;
+    right: 0;
+}
+
+a#login{
+    background-color: rgb(51, 185, 62);
+}
+
+
+/*-----------MEDIA QUERIES------------*/
+
+@media screen and (max-width: 768px) { /*cuando el ancho sea menor de 768*/
+    ul.nav_vertical {
+      width: 100%; /*la lista ul de clase nav_vertical ocupa el 100% del ancho de la pantalla*/
+      height: auto;
+      position: relative;
+    }
+    
+    div.desc_curso {
+        margin-left: 0; /*el texto pasa abajo sin margen izquierdo*/
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    
+    .navbar {
+        position: static;
+        float: none;
+        display: block;
+    }
+    .navbar a, .navbar a#login {
+        position: static;
+        float: none;
+        display: block;
+    }
+    
+    div.cursos4, div.desc_curso, div#contenedor{
+        position: static;
+        float: none;
+        display: block;
+    }
+    header{
+        display:none;
+    }
+}
+
+
+/*----------------BARRA QUE NO USAMOS-------------------*/
+ul.nav_vertical { /*lista de clase nav_vertical*/
+    list-style-type: none; /*le saca el puntito (la viñeta) antes de el link"*/
+    margin: 0;
+    padding: 0;
+    width: 25%; /*ocupa el 25% del ancho*/
+    position: fixed; /*la posicion es fija, se mueve con la pantalla*/
+    top: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.nav_vertical li {
+    background-color: royalblue;
+}
+
+
+a{
+    font-style: bold;
+    color: royalblue; /*color de letra*/
+    text-decoration: none; /*le saca el subrayado al link*/
+}
+
+/*ul.nav_vertical li a:hover { 
+    background-color: #555;
+    color: white;
+}*/
+
+/*imagenes del curso*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
