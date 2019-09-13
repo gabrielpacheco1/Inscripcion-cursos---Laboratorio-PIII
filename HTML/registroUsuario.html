@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" href="CCS\estilos.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="JS/validaciones.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header>SISTEMA DE INSCRIPCION ONLINE A CURSOS</header>
+    <div class="navbar">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>INICIO</a>
+        <a href="laFacultad.html"><i class="fa fa-university" aria-hidden="true"></i>FACULTAD</a>
+        <a href="cursos.html"><i class="fa fa-folder" aria-hidden="true"></i>CURSOS</a>
+        <a href="preguntasFrecuentes.html"><i class="fa fa-question-circle" aria-hidden="true"></i>FAQ</a>
+        <a href="acceder.html" class="active" id="login"><i class="fa fa-fw fa-user"></i>INGRESAR</a>
+    </div>
+
+    <div id="contenedor">
+        
+            <h2>Nueva cuenta</h2>
+            <form action="#" method="post" onsubmit="return validarContraseña()">
+                <div class="form-label">
+                    <label for="usuario">Usuario</label>
+                    <span class="form-input">
+                        <input type="text" id="usuario" name="usuario" maxlength="10" size="12" required>
+                    </span>
+                </div><br>
+                
+                <div class="form-label">
+                    <label for="contraseña1">Contraseña</label>
+                    <span class="form-input">
+                        <input type="password" id="contraseña1" name="contraseña1" size="18" required>
+                    </span>
+                </div><br>
+
+                <div class="form-label">
+                        <label for="contraseña2">Reingrese contraseña</label>
+                        <span class="form-input">
+                            <input type="password" id="contraseña2" name="contraseña2" size="18" required>
+                        </span>
+                    </div><br>
+                
+                <input class="btn btn-primary" type="submit" value="ACEPTAR"><br><br>
+                <input class="btn btn-primary btn-primary2" type="reset" value="CANCELAR">
+                    
+            </form>
+        
+        <div><span>¿Ya tienes una cuenta?<a href="acceder.html"> Entrar</a></span></div>
+        <footer>
+            <span class="nombreSistema">JOGA© - 2019</span>
+            <span class="facultad">Facultad de Tecnologia y Ciencias Aplicadas</span> 
+        </footer> 
+    </div>
+
+</body>
+</html>

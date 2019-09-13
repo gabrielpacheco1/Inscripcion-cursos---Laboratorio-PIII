@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Acceso</title>
+    
+    <link rel="stylesheet" type="text/css" href="CCS\estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>FACULTAD DE TECNOLOGIA <br> Y CIENDIAS APLICADAS</header>
+
+    
+    <div class="navbar">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>INICIO</a>
+        <a href="laFacultad.html"><i class="fa fa-university" aria-hidden="true"></i>FACULTAD</a>
+        <a href="cursos.html"><i class="fa fa-folder" aria-hidden="true"></i>CURSOS</a>
+        <a href="preguntasFrecuentes.html"><i class="fa fa-question-circle" aria-hidden="true"></i>FAQ</a>
+        <a href="acceder.html" class="active" id="login"><i class="fa fa-fw fa-user"></i>INGRESAR</a>
+    </div>
+        
+    <div id="contenedor">
+        <h1>ACCESO A LA PLATAFORMA</h1><br>
+        
+            <div>
+                <h3>Login</h3>
+                <form action="#" method="post">
+                    <div class="form-label">
+                        <label for="usuario">Usuario</label>
+                        <span class="form-input">
+                            <input type="text" id="usuario" name="usuario" maxlength="10" size="12" required>
+                        </span>
+                    </div><br>
+                    
+                    <div class="form-label">
+                        <label for="contraseña">Contraseña</label>
+                        <span class="form-input">
+                            <input type="password" id="contraseña" name="contraseña" size="18" required>
+                        </span>
+                    </div><br>
+
+                    <div>
+                        <input type="checkbox" id="recordarUsuario" name="recordarUsuario">
+                        <label style="color:rgba(0, 0, 0, 0.5)" for="recordarUsuario">Recordar nombre de usuario</label>
+                    </div><br>
+                    
+                    <input type="submit" class="btn btn-primary" type="submit" value="Ingresar">
+                </form>
+                <div><span>¿No tienes una cuenta?<a href="registroUsuario.html"> Regístrate</a></span></div>
+            </div><br>
+        
+        <footer>
+            <span class="nombreSistema"><strong>JOGA© - 2019</strong></span>
+            <span class="facultad"><strong>Facultad de Tecnologia y Ciencias Aplicadas</strong> </span>
+        </footer>    
+    </div> 
+    
+        
+    
+            
+        
+    
+
+</body>
+
+</html>
+

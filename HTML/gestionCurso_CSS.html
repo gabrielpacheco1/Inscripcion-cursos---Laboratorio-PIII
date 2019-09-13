@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CCS\estilos.css">
+
+    <script src="JS/validaciones.js"></script>
+    <title>GESTIONAR CURSO</title>
+</head>
+    <body>
+        <div class="contenedor">
+        <section>
+            <h1>Gestionar Cursos</h1>
+            <form action="" method="post" onsubmit="return validarFormularioCursos()"> <!--define un formulario que se utiliza para recuperar datos que ingresa el usuario-->
+                <fieldset> <!--es un recuadro que lleva una leyenda-->
+                    <legend><strong>Datos</strong></legend>
+                    <div class="row">
+                        <div class="col-3">
+                            <label  for="nombreCurso">NOMBRE DEL CURSO:</label><br> <br> 
+                            <label for="fechaDesde">FECHA DESDE:</label><br> <br>     
+                            <label for="fechaHasta">FECHA HASTA:</label><br> <br>      
+                            <label for="cantidadHoras">CANTIDAD DE HORAS:</label><br><br>      
+                            <label  for="lugarRealizacion">LUGAR DE REALIZACION:</label><br>  <br>     
+                            <label  for="horarios">HORARIOS:</label><br> <br>  
+                            <label for="fechaLimite">FECHA LIMITE DE INSCRIPCION:</label><br> <br>      
+                            <label for="fechaCertificado">FECHA DEL CERTIFICADO:</label><br> <br>      
+                            <label for="costoCurso">COSTO DEL CURSO:</label><br> <br>      
+                            <label for="cupomax">CUPO MAXIMO</label><br> <br>      
+                            <label for="cupomin">CUPO MINIMO</label><br>      
+                        </div>
+                    <div class="col-6">
+                            <input type="text" id="nombreCurso" name="nombreCurso" required maxlength="100"><br> <br>                    
+                            <input type="date" name="fechaDesde" id="fechaDesde" required><br> <br>                            
+                            <input type="date" name="fechaHasta" id="fechaHasta" required><br> <br>                             
+                            <input type="number" id="cantidadHoras" required max="999" min="1"><br> <br>                          
+                            <input type="text" id="lugarRealizacion" name="lugarRealizacion" required maxlength="100"><br> <br>                            
+                            <input type="text" id="horarios" name="horarios" required maxlength="100"><br> <br>  <br>                          
+                            <input type="date" name="fechaLimite" id="fechaLimite" required><br> <br>                            
+                            <input type="date" name="fechaCertificado" id="fechaCertificado" required><br> <br>                            
+                            <input type="number" id="costoCurso" required min="1"><br> <br>                            
+                            <input type="number" id="cupomax" required min="1"><br> <br>                            
+                            <input type="number" id="cupomin" required min="1"><br>       
+                        </div>
+                    </div>                     
+                </fieldset><br>
+                    
+                <fieldset class="cert">
+                    <legend><strong>AUTORIDADES CERTIFICANTES</strong></legend>
+                    <div class="row">
+                            <div class="col-2">
+                                <label for="cantidad">CANTIDAD:</label><br> <br> 
+                                <label  for="apellido">APELLIDO</label><br> <br> 
+                                <label for="nombre">NOMBRE:</label><br> <br> 
+                                <label for="cargo">CARGO:</label><br> <br> 
+                                <label for="firma">FIRMAS</label><br> 
+                            </div>
+                        <div class="col-6">
+                                <input type="number" id="cantidad" required min="1"><br> <br>                    
+                                <input type="text" id="apellido" name="apellido" required><br> <br> <!--es para darle formato y el for es cuando pasamos el mouse hacia donde se va a dirigir-->                                
+                                <input type="text" id="nombre" name="nombre" required><br> <br>                                
+                                <input type="text" id="cargo" name="cargo" required maxlength="100"><br> <br>                                
+                                <input type="file" id="firma" name="firma"><br> 
+                            </div>
+                        </div>   
+                    
+                    
+                </fieldset><br> 
+
+                <fieldset>
+                    <legend><strong>EXPOSITORES</strong></legend>
+                    <div class="row">
+                            <div class="col-2">
+                                <label for="cantidad">CANTIDAD:</label><br> <br>
+                                <label  for="apellidoEx">APELLIDO</label><br> <br>
+                                <label for="nombreEx">NOMBRE:</label><br> <br>
+                                <label for="dni">DNI:</label><br> <br>
+                                <label for="titulo">TITULO:</label><br> 
+                            </div>
+                        <div class="col-6">
+                                <input type="number" required min="1"><br> <br>
+                                <input type="text" id="apellidoEx" name="apellidoEx" required><br> <br> <!--es para darle formato y el for es cuando pasamos el mouse hacia donde se va a dirigir-->                    
+                                <input type="text" id="nombreEx" name="nombreEx" required><br> <br>                    
+                                <input type="text" id="dni" name="dni" required maxlength="8"><br> <br>                    
+                                <input type="text" id="titulo" name="titulo" required maxlength="100"><br> 
+                                
+
+                            </div>
+                        </div>   
+                </fieldset><br>
+                <input class="btn btn-primary" type="submit" value="AGREGAR CURSO">
+                <input class="btn btn-primary btn-primary2" type="reset" value="NUEVO CURSO">
+                <input class="btn btn-primary btn-primary3" type="submit" value="ACEPTAR" >
+
+            </form>
+        
+</section>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+        <footer>Facultad de Tecnologia y Ciencias Aplicadas</footer>    
+    </body>
+</html>

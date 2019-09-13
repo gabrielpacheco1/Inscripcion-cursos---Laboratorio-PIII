@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CCS\estilos.css">
+
+    <title>Inscripcion al Curso</title>
+  </head>
+  <body>
+        <div class="container">
+    <header>
+        FACULTAD DE TECNOLOGIA <br> Y CIENDIAS APLICADAS
+    </header>
+
+    <div id="contenedor">
+        <h2>Inscripcion al Curso</h2>
+   
+        <form action="#" method="post"> <!--action="resultadoInscripcion.html"-->
+            <fieldset> <!--agrupar elementos comunes-->
+                <legend><strong>Datos Personales</strong></legend> <!--leyenda del recuadro-->
+                <div class="row">
+                        <div class="col-2">
+                                <label for="apellido">Apellido</label><br><br> <!--for para accesibilidad-->
+                                <label for="nombre">Nombre</label><br><br>
+                                <label for="dni">DNI</label><br><br>
+                                <label for="email">Email</label><br><br>
+                                <label for="categoria">Categoria</label><br><br>
+                                
+                                <input class="btn btn-primary" type="submit" value="ACEPTAR" formaction="inscripcionAceptada_CSS.html"><br><br>
+                                <input class="btn btn-primary btn-primary2" type="reset" value="CANCELAR">
+                                
+
+                        </div>
+                        <div class="col-6">
+                                <input type="text" id="apellido" name="apellido" required> <br><br> <!--el doc que lor ecibe usa el name-->
+                                <input type="text" id="nombre" name="nombre" required> <br><br>
+                                <input type="text" id="dni" name="dni" maxlength="8"> <br><br>
+                                <input type="email" id="email" name="email"> <br><br><br>
+                                <select id="categoria" name="categoria">
+                                        <option>Alumno</option>
+                                        <option>Docente</option>
+                                        <option>Publico General</option>
+                                    </select> <br><br>
+                               
+                        </div>
+                </div>               
+                <!--type="number" id="dni" name="dni" max="99999999"-->
+            </fieldset>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Verifique los datos antes de enviar el formulario!
+        </div>
+    
+        <footer>
+            <span class="nombreSistema"><strong>JOGA© - 2019</strong></span>
+            <span class="facultad"><strong>Facultad de Tecnologia y Ciencias Aplicadas</strong> </span>
+        </footer>
+    </div>
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+           
+    </body>
+</html>
